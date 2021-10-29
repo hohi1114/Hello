@@ -1,0 +1,79 @@
+body{
+    font-family: 'Bebas Neue';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 p{ 
+    font-size: 3rem;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 2%;
+    border-bottom: 2px solid blue;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 60%;
+    border-width: 0.2em;
+    box-sizing: border-box;
+    text-align: center;
+    letter-spacing:1rem;
+}
+
+div{
+    font-size:2rem;
+}
+
+
+
+#name{
+    margin-top:3%;
+    background-color: cadetblue;
+    letter-spacing: 0.2em;
+    margin-bottom: 3%;
+    height: fit-content;
+    
+}
+
+input[type='text']{
+    margin-right: 10%;
+    margin-left: 4%;
+    margin-bottom:2%;
+    text-align: center; 
+}
+
+label[for='first']{
+    margin-top:2%;
+}
+
+input[value="3"]{
+    margin-bottom:4%;
+}
+
+input[type="email"]{
+    margin-bottom:4%;
+} 
+
+#age_group{
+    font-size:1.3rem;
+}
+
+p button{
+    text-align:center;
+    color:cyan;
+    background: blue;
+    border:2px solid;
+    margin-left:45%;
+    padding: 0.5em 1em;
+    transition: all 0.25s;
+    
+} 
+
+button:hover{
+    border-color:greenyellow;
+    background-color:green;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+

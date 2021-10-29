@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_practice.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <title>Marathon Registration</title>
+</head>
+
+
+
+<body>
+    <h1><p>Race Registration!</p></h1>
+    <p id="inputs">
+        <form action="/sent" method="get">
+            <div id="name">
+                <label for="first"> First name </label>
+                <input id="first" type="text" placeholder="Enter name" name="first" required>
+                <label for="last"> Last name </label>
+                <input id="last" type="text" placeholder="Enter name" name="last" required>
+            </div>
+
+            <div>
+                <label for="select"> Select a Race: </label> <br>
+                <div>
+                    <input type="radio" name="race" value="1"> Fun Run 5k
+                </div>  <!-- using div is important-->
+                <div>
+                    <input type="radio" name="race" value="2"> Half Marathon
+                </div>
+                <div>
+                    <input type="radio" name="race" value="3"> Full Marathon
+                </div>
+            </div>
+            <div>
+                <label for="email"> Email: </label>
+                <input type="email" name="email" id="email" placeholder="Enter Email" required>
+
+                <label for="password" >Password: </label>
+                <input type="password" id="password" name="password" placeholder="Enter Password"
+                minlength=5 maxlength=15 required>
+
+            </div>
+
+            <div>
+                <label for="age_group"> Select Age Group </label>
+                <select name="group" id="age_group">
+                    <option value="kids"> under 18</option>
+                    <option value="ya"> 18 ~ 30</option>
+                    <option value="adults"> 30 ~ 50</option>
+                    <option value="seniors"> over 50 </option>
+                </select>
+            </div>
+
+            <p>
+                <button type="submit">Register </button>
+            </p>
+        </form>
+    </p>
+</body>
+</html>
